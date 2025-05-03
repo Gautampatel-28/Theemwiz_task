@@ -613,7 +613,7 @@
 }
 
 /* latest work  */
-.portfolio-dropdown {
+.dropdown{
   display: none;
   width: 100%;
   padding: 10px;
@@ -2177,7 +2177,7 @@ hr {
     display: none;
   }
 
-  .portfolio-dropdown {
+  .dropdown {
     display: block;
     margin-bottom: 48px;
   }
