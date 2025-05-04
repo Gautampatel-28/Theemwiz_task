@@ -1,0 +1,132 @@
+
+/* form and map */
+.map-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--bg2-color);
+  }
+  
+  .location-dot {
+    position: absolute;
+    top: 48%;
+    left: 65%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+  }
+  
+  .map-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .contact-form {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background: var(--text-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 90%;
+    z-index: 2;
+  }
+  
+  .contact-form .contact-form-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .contact-form button {
+    float: right;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    padding: 12px;
+    width: 50%;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+
+
+
+  @media (max-width: 480px){
+    
+  /* map&form  */
+  .map-section {
+    display: flex;
+    height: auto;
+    position: absolute;
+    flex-direction: column-reverse;
+  }
+
+  .map-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+
+  .location-dot {
+    position: absolute;
+    top: 86%;
+    left: 44%;
+    /* transform: translate(-55%, -50%); */
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    /* z-index: 3; */
+  }
+
+  .contact-form {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    background: var(--text-white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 100%;
+    margin: 20px 20px 60px 20px;
+  }
+  }

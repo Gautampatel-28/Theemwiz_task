@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #ef6d58;
+  --secondary-color: #f6daca;
+  --text-white: #ffffff;
+  --bg-dark: #28293e;
+  --bg2-color: #fdf0e9;
+  --border-color: #ffffff4b;
+  --border-color2: #3a3c56;
+  --banner-color: #fdf0e9;
+  --text-light: #b0b0b0;
+  --text-light2: #ffffffa3;
+  --text-muted: #ccc;
+  --text-dark: #4d1f00;
+  --text-color: #391400;
+  --text-color2: #391400a3;
+  --dot-color: #4e4f6e;
+  --pricing-plan-card: #fff7f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+.container-fixed {
+  max-width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* responsive css  */
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container-fixed {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+}
