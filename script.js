@@ -8,7 +8,7 @@ const headers = document.querySelectorAll(".accordion-header");
 
 headers.forEach((header) => {
   header.addEventListener("click", () => {
-    const item = header.closest(".accordion-item"); // safer than parentElement
+    const item = header.closest(".accordion-item"); 
     const isActive = item.classList.contains("active");
 
     document
@@ -75,7 +75,6 @@ function setupCarousel() {
   }
   updateCarousel();
 }
-
 
 let startX = 0;
 grid.addEventListener("touchstart", e => startX = e.touches[0].clientX);

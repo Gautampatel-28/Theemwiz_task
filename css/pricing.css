@@ -1,0 +1,259 @@
+
+/* pricing  */
+.pricing-section {
+    overflow-x: hidden;
+    background-color: var(--bg2-color);
+  }
+  
+  .pricing-content {
+    margin-top: 93px;
+    text-align: left;
+  }
+  
+  .pricing-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  
+  .pricing-description {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: var(--text-color);
+    margin: 20px 0px 64px 0px;
+  }
+  
+  /* pricing cards  */
+  .pricing-plans {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 20px;
+  }
+  
+  .plan {
+    background: var(--pricing-plan-card);
+    border: 1px solid #f0dcd6;
+    padding: 44px 48px 48px 48px;
+    width: 391px;
+    height: 512px;
+    position: relative;
+    text-align: left;
+  }
+  .plan-left {
+    border-radius: 10px 0 0 10px;
+    text-align: left;
+  }
+  
+  .plan-right {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+  .plan ul li.active {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  
+  .plan ul li {
+    padding: 8px 0;
+    color: #aaa;
+    position: relative;
+    /* padding-left: 20px; */
+    color: var(--text-color2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  
+  .plan ul li::before {
+    content: "";
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #4b2e2e;
+  }
+  
+  .menu-item .icon {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+  
+  .menu-item .icon-minus {
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+  
+  .btn_4 {
+    background-color: var(--text-white);
+    color: var(--bg-dark);
+    border: none;
+    padding: 18px 31.73px 16px 32.27px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn_5 {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    padding: 18px 31.73px 16px 32.27px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    line-height: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan.popular {
+    background: var(--text-white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-45px);
+    z-index: 1;
+    height: 560px;
+    text-align: left;
+  }
+  
+  .plan .badge {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 4px 17px 2px 15px;
+    line-height: 32px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .plan .design {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    letter-spacing: 3px;
+  }
+  
+  .plan .fees {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+  }
+  
+  .plan .price-description {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin-bottom: 27px;
+    color: var(--text-color2);
+    width: 295px;
+  }
+  
+  .plan-right h5 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 32px;
+    color: var(--primary-color);
+    margin-bottom: 17px;
+  }
+
+
+
+  @media(max-width: 480px){
+     /* pricing  */
+
+  .pricing-title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  .pricing-description {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: var(--text-color);
+    margin-bottom: 17px 0px 35px 0px !important;
+  }
+
+  .plan.popular {
+    transform: none;
+  }
+
+  .pricing-plans {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .plan {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .plan .fees {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .plan .price-description {
+    width: 100%;
+    font-size: 14px;
+  }
+  }
